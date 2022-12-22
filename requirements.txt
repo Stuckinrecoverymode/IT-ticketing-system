@@ -1,0 +1,6 @@
+Django
+psycopg2-binary
+django-allauth
+sqlparse
+setuptools
+asgiref
