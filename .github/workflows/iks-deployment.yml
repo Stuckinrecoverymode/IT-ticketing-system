@@ -19,8 +19,8 @@ env:
   REGISTRY_HOSTNAME: us.icr.io
   IMAGE_NAME: hello-python
   IKS_CLUSTER: bq1sm2gd0sjtps7ajoa0 # name or id of cluster
-  DEPLOYMENT_NAME: hello-python
-  PORT: 5001
+  DEPLOYMENT_NAME: it-ticketing-system
+  PORT: 6983
 
 jobs:
   setup-build-publish-deploy:
