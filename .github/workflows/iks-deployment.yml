@@ -14,13 +14,13 @@ on: [push]
 env:
   GITHUB_SHA: ${{ github.sha }}
   IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-  IBM_CLOUD_REGION: us-south
+  IBM_CLOUD_REGION: eu-central
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
-  REGISTRY_HOSTNAME: us.icr.io
-  IMAGE_NAME: hello-python
-  IKS_CLUSTER: bq1sm2gd0sjtps7ajoa0 # name or id of cluster
+  REGISTRY_HOSTNAME: de.icr.io
+  IMAGE_NAME: it_ticket_sistemi
+  IKS_CLUSTER: ${{ secrets.IKS_CLUSTER_ID }}
   DEPLOYMENT_NAME: it-ticketing-system
-  PORT: 6983
+  PORT: 8000
 
 jobs:
   setup-build-publish-deploy:
