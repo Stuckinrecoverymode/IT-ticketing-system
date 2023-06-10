@@ -3,6 +3,9 @@ FROM python:3.10-slim
 # Set the working directory
 WORKDIR /app
 
+# Fix vulnerability that affects denial of service attacks
+RUN apt-get update && apt-get install -y openssl && apt-get upgrade -y openssl
+
 # Install dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
