@@ -11,10 +11,10 @@
         <div class="full">
           <div class="title-holder">
             <div class="title-holder-cell text-left">
-              <h1 class="page-title">Sipariş Al</h1>
+              <h1 class="page-title">Ticket Al</h1>
               <ol class="breadcrumb">
                 <li><a href="{% url 'index' %}">Ana Sayfa</a></li>
-                <li class="active">Sipariş Al</li>
+                <li class="active">Ticket Al</li>
               </ol>
             </div>
           </div>
@@ -33,7 +33,7 @@
           <div class="full">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="main_heading text_align_center">
-                <h2>EHM TEKNİK SERVİS FORMU</h2>
+                <h2>IT TICKET SİSTEM SERVİS FORMU</h2>
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 appointment_form">
@@ -222,7 +222,7 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
-          center: {lat:  38.463125, lng: 27.175887},
+          center: {lat:  37.441968, lng: -122.172830},
 		  styles: [
                {
                  elementType: 'geometry',
@@ -315,7 +315,7 @@
 
         var image = "{% static 'media/images/it_service/location_icon_map_cont.png' %}";
         var beachMarker = new google.maps.Marker({
-          position: {lat:  38.463125, lng: 27.175887},
+          position: {lat:  37.441968, lng: -122.172830},
           map: map,
           icon: image
         });

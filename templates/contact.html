@@ -41,8 +41,8 @@
                 <div class="information_bottom text_align_center">
                   <div class="icon_bottom"> <i class="fa fa-road" aria-hidden="true"></i> </div>
                   <div class="info_cont">
-                    <h4>Agalar Mahallesi, Bornova</h4>
-                    <p>İzmir Türkiye</p>
+                    <h4>Silikon Vadisi</h4>
+                    <p>Amerika Birleşik Devletleri</p>
                   </div>
                 </div>
               </div>
@@ -241,7 +241,7 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
-          center: {lat:  38.463125, lng: 27.175887},
+          center: {lat:  37.441968, lng: -122.172830},
 		  styles: [
                {
                  elementType: 'geometry',
@@ -334,7 +334,7 @@
 
         var image = "{% static 'media/images/it_service/location_icon_map_cont.png' %}";
         var beachMarker = new google.maps.Marker({
-          position: {lat:  38.463125, lng: 27.175887},
+          position: {lat:  37.441968, lng: -122.172830},
           map: map,
           icon: image
         });
