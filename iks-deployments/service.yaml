@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: it-ticketing-system
+  name: it-ticketing-system
+  namespace: default
+  resourceVersion: "30911"
+spec:
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 30248
+    port: 31558
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    app: it-ticketing-system
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
